@@ -33,3 +33,22 @@ SELECT replacement_cost, COUNT(*) FROM film GROUP BY replacement_cost HAVING COU
 SELECT store_id, COUNT(*) FROM customer GROUP BY store_id;
 SELECT country_id, MAX(COUNT(*)) FROM customer GROUP BY country_id;
 
+CREATE TABLE employee (id INTEGER, name VARCHAR(50), birthday DATE, email VARCHAR(100));
+INSERT INTO employee (id, name, birthday, email) values (1, 'Yuri', '2019-06-29', 'ysilkstone0@live.com');
+UPDATE employee SET name = 'Mehmet' WHERE name = 'Yuri';
+UPDATE employee SET email = 'crazyboy_58@patika.com' WHERE id= 45;
+UPDATE employee SET id = 58 WHERE id = 35;
+UPDATE employee SET birthday = '1999-01-01' WHERE birthday = '2002-02-02';
+DELETE FROM employee WHERE id = 9;
+DELETE FROM employee WHERE name = 'Terese';
+DELETE FROM employee WHERE birthday = '1984-01-05';
+DELETE FROM employee WHERE email = 'hmarsdens@reverbnation.com';
+DELETE FROM employee WHERE name = 'Halimeda';
+
+
+
+
+
+
+
+
