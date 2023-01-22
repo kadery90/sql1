@@ -18,3 +18,9 @@ SELECT COUNT(DISTINCT replacement_cost) FROM film;
 SELECT COUNT(*) FROM film WHERE title LIKE 'T%' AND rating = 'G';
 SELECT COUNT(*) FROM country WHERE country LIKE '_____';
 SELECT COUNT(*) FROM city WHERE city ILIKE '%R';
+
+SELECT * FROM film WHERE title LIKE '%n' ORDER BY DESC lenght LIMIT 5;
+SELECT * FROM film WHERE title LIKE '%n' ORDER BY ASC lenght OFFSET 5 LIMIT 5;
+SELECT * FROM customer WHERE store_id = 1 ORDER BY last_name LIMIT 1;
+
+
